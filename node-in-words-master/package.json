@@ -1,0 +1,36 @@
+{
+  "name": "in-words",
+  "version": "0.2.2",
+  "description": "Convert numbers to words",
+  "main": "index.js",
+  "homepage": "https://github.com/adrianheine/node-in-words",
+  "bugs": "https://github.com/adrianheine/node-in-words/issues",
+  "scripts": {
+    "test": "npm run-script lint && npm run-script unittest && npm run-script testexample",
+    "unittest": "mocha --recursive --throw-deprecation --check-leaks -b -R progress",
+    "lint": "eslint .",
+    "testexample": "node -c example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/adrianheine/node-in-words.git"
+  },
+  "keywords": [
+    "number",
+    "numbers",
+    "numerals",
+    "stringify",
+    "in-words",
+    "words"
+  ],
+  "author": "Adrian Heine <mail@adrianheine.de>",
+  "licenses": [ {
+    "type": "Apache 2.0",
+    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+  } ],
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "mocha": "^5.1.0"
+  },
+  "tonicExampleFilename": "example/example.js"
+}
